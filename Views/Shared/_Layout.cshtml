@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="../js/lib/es6-shim.js"></script>
+    <script src="../js/lib/angular2-polyfills.js"></script>
+    <script src="../js/lib/system.js"></script>
+    <script>
+        System.config({
+            defaultJSExtensions: true,
+            baseUrl: 'js/app',
+            map: {
+             'rxjs': 'js/lib/rxjs'
+            }
+        });
+    </script>
+    <script src="../js/lib/angular2.dev.js"></script>
+    <script src="../js/lib/router.dev.js"></script>
+    <script src="../js/lib/http.dev.js"></script>
+</head>
+<base href="/">
+<body>
+    @RenderBody()
+</body>
+@RenderSection("scripts", required: false)
+</html>
